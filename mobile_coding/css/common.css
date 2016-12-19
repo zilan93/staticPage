@@ -1,0 +1,72 @@
+/***CSS reset***/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,
+big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,
+dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,
+details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+*{tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:rgba(0,0,0,0);-ms-tap-highlight-color:rgba(0,0,0,0);}
+html{-webkit-text-size-adjust:none;}
+body{-moz-user-select:none;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;-webkit-user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0);background-color: #e7e7e7;font-size:62.5%;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+ol,ul{list-style:none;}
+.lh{overflow:hidden;zoom:1;}
+.lh li,.lh dl,.lh .item{float:left;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+a{color:#525252;text-decoration:none;}
+a:hover,a:focus{text-decoration:none; }
+button,input,select,textarea{font-size:100%;}
+input,select,button{outline:none;box-sizing: border-box;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+input,textarea{outline:0;resize:none;}
+img{max-width: 100%;}
+.floor-bd{margin: 0 3.125%;overflow: hidden;}
+.clearfix:after{content: " ";display:block;height:0;clear:both;visibility: hidden;}
+.clearfix{display:block;}
+/***文字排版***/
+h2{font-size:16px;}
+.f12{font-size:12px;}
+.f13{font-size:13px;}
+.f14{font-size:14px;}
+.f15{font-size:15px;}
+.f16{font-size:16px;}
+.f20{font-size:20px;}
+.fb{font-weight:bold;}
+.fn{font-weight:normal;}
+.t2{text-indent:2em;}
+.lh150{line-height:150%;}
+.lh180{line-height:180%;}
+.lh200{line-height:200%;}
+.unl{text-decoration:underline;}
+.no_unl{text-decoration:none;}
+/***常用文字颜色***/
+.gray{color:#bfbfc0;}
+.highlight_text{color:#008fd7;}
+.orange_color{color:#fd5900;}
+.gray_color{color:#a0a0a0;}
+.red_bgcolor{background:#FF1E1E;}
+.orange_bgcolor{background:#FF7836;}
+.title_red {color: #CC0000;}
+/***定位***/
+.tl{text-align:left;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+.bc{margin-left:auto;margin-right:auto;}
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+.cb{clear:both;}
+.cl{clear:left;}
+.cr{clear:right;}
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block}* html .clearfix{height:1%}.clearfix{display:block;}
+.vm{vertical-align:middle;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.abs-right{position:absolute;right:0;}
+.zoom{zoom:1;}
+.hidden{visibility:hidden;}
+.none{display:none;}
