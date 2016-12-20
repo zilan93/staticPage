@@ -1,0 +1,151 @@
+﻿/*********全局样式**********/
+* {padding:0;margin:0;}
+ul  li {list-style:none;}
+small {
+    display:block;
+}
+hr{
+    height: 2px;
+    background: #297546;
+}
+/*********头部样式**********/
+header {
+background:#499a68;
+text-align:center;
+padding:50px 0 110px;
+border-bottom: 5px solid #297546;
+}
+header div {
+    position:relative;
+    margin-bottom: 20px;
+}
+header div:before {
+content:" ";
+border:20px solid #297546;
+background:inherit;
+position:absolute;
+width:150px;
+height:150px;
+top:50%;
+left:50%;
+margin-left:-75px;
+margin-top:-75px;
+border-radius: 50%;
+}
+header div h1,header div small {
+    position:relative;
+    color:#fff;
+}
+header h1 {
+    font-size:50px;
+    font-weight: 600;
+}
+header small {
+    font-size:14px;
+}
+
+/*********主体样式**********/
+.feature{
+    position:relative;
+    padding-top:80px;
+}
+.feature_box {
+    width:140px;
+    height:140px;
+    position:absolute;
+    top:-70px;
+    left:50%;
+    margin-left: -75px;
+}
+.feature_icon{
+    display: block;;
+    width:140px;
+    height:140px;
+    position:absolute;
+}
+.p1 .feature_icon {
+     background:url(../images/rocket.png) no-repeat center;
+     background-size: cover;
+ }
+.p2 .feature_icon {
+    background:url(../images/lock.png) no-repeat center;
+    background-size: cover;
+}
+.p3 .feature_icon {
+    background:url(../images/heart.png) no-repeat center;
+    background-size: cover;
+}
+.feature_box:before {
+    content: "";
+    position:absolute;
+    width:100%;
+    height:100%;
+    border:5px solid #297546;
+    border-bottom-color: #fff;
+    border-left-color:#fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border-radius: 50%;
+    background: #fff;
+}
+.feature_content h3{margin-bottom: 20px;}
+/*****表格部分*****/
+.table_content small {
+    display:block;
+    padding:20px 0;
+    color:#000;
+    border-bottom:3px solid #297546;
+}
+.table_content .input_text{
+    width:100%;
+    height:34px;
+    padding:5px;
+    line-height: 1.5;
+    border-radius:6px;
+    border:1px solid #CCCCCC;
+}
+.table_content .btn-primary{width: 100%;}
+/***********尾部样式***********/
+footer {
+    background:#499a68;
+    padding:20px 0;
+    color:#fff;
+    text-align:center;
+    border-top:5px solid #297546;
+}
+@media screen and (max-width: 991px) {
+    .feature{
+        padding-top:20px;
+    }
+    .feature_box {
+        width:45px;
+        height:45px;
+        position:relative;
+        float:left;
+        top:0;
+        left:0;
+        margin: 10px 0;
+    }
+    .feature_box:before {
+        content: normal;
+    }
+    .feature_icon{
+        display: block;;
+        width:45px;
+        height:45px;
+        position:absolute;
+    }
+    .p1 .feature_icon {
+        background:url(../images/rocket_90.png) no-repeat center;
+        background-size: 100%;
+    }
+    .p2 .feature_icon {
+        background:url(../images/lock_90.png) no-repeat center;
+        background-size: 100%;
+    }
+    .p3 .feature_icon {
+        background:url(../images/heart_90.png) no-repeat center;
+        background-size: 100%;
+    }
+}

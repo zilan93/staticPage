@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--作用是使IE浏览器运行在最新的渲染模式下-->
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<!--该meta用来设置自适应-->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<meta name="renderer" content="webkit">
+    <title>Toran Proxy</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<header>
+		<div>
+			<h1>Toran proxy</h1>
+			<small>A Composer proxy for speed and reliability</small>
+		</div>
+	</header>
+	<section class="container">
+	<div class="row">
+		<div class="col-md-4 p1 feature">
+			<div class="feature_box"><i class="feature_icon"></i></div>
+			<div class="feature_content">
+				<h3>Reliable and fast Composer deployments</h3>
+				<p>
+					Toran acts as a proxy for Packagist and GitHub. It is meant to be set up on your own server or even inside your office. This offers a few benefits:
+				</p>
+				<ul>
+					<li>
+						<strong>Redundant infrastructure to ensure your deployments never fail and your developers can work at any time.</strong>
+						<span>Packages will be installed from your proxy with a fallback to GitHub, ensuring a maximum availability.</span>
+					</li>
+					<li>
+						<strong>Higher bandwidth for faster installations.</strong>
+						<span>Higher bandwidth for faster installations.</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-4 p2 feature">
+			<div class="feature_box"><i class="feature_icon"></i></div>
+			<div class="feature_content">
+				<h3>Easily host private packages</h3>
+				<p>
+					Toran is easy to install and configure, and provides you with a web interface to conveniently manage and list your private Composer packages.
+					It uses a file-based configuration that is easy to manage from the command line but also allows changes over the web interface.
+					Whatever suits you best.
+				</p>
+			</div>
+
+		</div>
+		<div class="col-md-4 p3 feature">
+			<div class="feature_box"><i class="feature_icon"></i></div>
+			<div class="feature_content">
+				<h3>Easily host private packages</h3>
+				<p>
+					Toran is easy to install and configure, and provides you with a web interface to conveniently manage and list your private Composer packages.
+					It uses a file-based configuration that is easy to manage from the command line but also allows changes over the web interface.
+					Whatever suits you best.
+				</p>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<div class="table_content">
+		<h3>Get your Toran license</h3>
+		<small>Prices below include all updates for as long as you own a license.</small>
+		<table class="table">
+			<thead>
+				<th></th>
+				<th>Personal Use</th>
+				<th>Supporter</th>
+				<th>Business</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Developers</td>
+					<td>1</td>
+					<td>1</td>
+					<td><input type="text" placeholder="How many developer work in your company?" class="input_text"></td>
+				</tr>
+				<tr>
+					<td>Support</td>
+					<td>None</td>
+					<td>Email</td>
+					<td>Priority Email</td>
+				</tr>
+				<tr>
+					<td>Price</td>
+					<td>Free for personal use</td>
+					<td>CHF 9.- / month</td>
+					<td>CHF 49.- / year for priority support</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td></td>
+					<td><button type="button" class="btn btn-default">Download</button></td>
+					<td><button type="button" class="btn btn-primary">Order</button></td>
+					<td><button type="button" class="btn btn-primary">Order</button></td>
+				</tr>
+			</tfoot>
+		</table>
+		<small> Billing is in CHF and invoiced yearly. Prices are VAT excl.
+			   Prices in EUR and USD are only indicative.
+		</small>
+	</div>
+	<div class="row">
+		<article class="col-sm-6">
+			<h3>Upcoming Features / Roadmap</h3>
+			<p>The following features may be added at some point in the future depending on interest from the community.</p>
+			<ul>
+				<li><span>Improvements to the package browsing UI (search and package details)</span></li>
+				<li><span>Packagist strict proxying to limit which packages your developers can use</span></li>
+				<li><span>LDAP and/or other more advanced authentication solutions</span></li>
+				<li><span>PaaS-provider edition for large-scale proxy setups</span></li>
+				<li><span>Toran-as-a-Service for private package hosting without hassle</span></li>
+			</ul>
+		</article>
+		<article class="col-sm-6">
+			<h3>Server Requirements</h3>
+			<p>Toran Proxy requires PHP 5.3.3 or above and the following PHP extensions need to be enabled: OpenSSL, ctype, JSON, XML.</p>
+		</article>
+	</div>
+	<p class="text-center"><small>Licenses are issued by Nelmio AG, CHE-236.742.577, and covered by the End User License Agreement.</small></p>
+	</section>
+	<footer>
+		<p>© Nelmio 2014 - Support - Contact - Terms of Services - Twitter</p>
+	</footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
