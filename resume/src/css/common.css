@@ -1,0 +1,36 @@
+/*public styles*/
+html,body,ul,li,dl,dt,dd,p,h1,h2,h3,h4,h5{margin:0;padding:0;}
+body{margin:0 auto;font-size:62.5%;color:#000;font-family: "opensans-light" "microsoft yahei";}
+h1,h2,h3,h4,h5{font-family: "big_john";font-weight: normal;}
+a{text-decoration: none;}
+ul{list-style: none;}
+.w{width:85%;max-width: 1500px;margin:0 auto;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility: hidden;}
+.clearfix{*zoom:1;}
+.left{float:left;}
+.right{float:right;}
+.lh{overflow:hidden;zoom:1;}
+.lh li{float:left;}
+input{-webkit-outline:none;outline: none;}
+/*font-face*/
+@font-face {
+    font-family: "big_john";
+    src: url("../Fonts/big_john.eot");
+    src: url("../Fonts/big_john.woff") format("woff");
+	 url("../Fonts/big_john.ttf") format("truetype");
+         url("../Fonts/big_john.svg#big_john") format("svg");
+}
+@font-face {
+    font-family: "opensans-light";
+    src: url("../Fonts/opensans-light.eot");
+    src: url("../Fonts/opensans-light.woff") format("woff");
+         url("../Fonts/opensans-light.ttf") format("truetype");
+         url("../Fonts/opensans-light.svg#opensans-light") format("svg");
+}
+@font-face {
+    font-family: "opensans-regular";
+    src: url("../Fonts/opensans-regular.eot");
+    src: url("../Fonts/opensans-regular.woff") format("woff");
+         url("../Fonts/opensans-regular.ttf") format("truetype");
+         url("../Fonts/opensans-regular.svg#opensans-regular") format("svg");
+}

@@ -1,0 +1,94 @@
+/***public styles***/
+body{background-color:#FEF9FD;}
+/*标题*/
+.sec_title_box{padding-top:5em;overflow:hidden;//background: url("../images/dashed.png") repeat-y center top;}
+.sec_title_box dt,.sec_title_box dd{float:left;width:50%;box-sizing: border-box;}
+.sec_title{position:relative;display:inline-block;color:#000;font-size:7.5em;line-height:2;font-weight: normal;}
+.sec_title:before,.sec_title:after{position:absolute;content: "";background: #000;width:95%;height:5px;}
+.sec_title:before{left:0;bottom:15px;}
+.sec_title:after{left:40px;bottom:5px;}
+.sec_title_box dd{font-size:1.8em;line-height:1.6;}
+/*按钮*/
+.view_more{position:relative;}
+.view_more .see_more{position:relative;display:block;width:150px;height:42px;margin:0 auto;border:4px solid #000;border-radius:20px;z-index: 100;color:#000;text-align: center;line-height:42px;font-size:1.8em;text-transform: uppercase;font-family: "big_john";}
+.view_more .line{position:absolute;left:50%;content: "";width:296px;height:5px;background: #000;}
+.view_more .line-before{top:18px;margin-left:-160px;}
+.view_more .line-after{top:28px;margin-left:-120px;}
+/*nav*/
+nav ul{overflow:hidden;}
+nav ul li{float:left;}
+nav ul li a{display:inline-block;margin:0 5px;padding:15px 20px;font-size:1.8em;font-family:"big_john";text-transform: uppercase;word-spacing: 0.3em;border-radius:15px;
+            -webkit-transition:all ease 0.3s;-moz-transition: all ease 0.5s;-o-transition: all ease 0.5s;transtion:all ease 0.5s;}
+nav ul li a:link,nav ul li a:visited{color:#000;}
+nav ul li a:hover,nav ul li a:active{color:#FDD400;background-color:#000;}
+/*header*/
+header{position:relative;}
+header nav{position:absolute;left:10%;top:5%;z-index: 10;}
+header .scroll_box{width:100%;}
+header .scroll_box img{max-width: 100%;}
+header .view_more{position:absolute;width:326px;height:260px;left:50%;bottom:10px;margin-left:-163px;}
+header .view_more .see_more{background-color:#FAD763;}
+header .view_more .line_icon{position:absolute;bottom:0;left:50%;width:32px;height:70%;margin-left:-16px;background: url("../images/line.png") no-repeat center bottom;background-size:contain;}
+/*section one*/
+.section_one{background-color:#fff;}
+.section_one .sec_title_box{background: url("../images/dashed.png") repeat-y center top;}
+.section_one .sec_title_box dt{padding-right:8%;}
+.section_one .sec_title_box dd{padding-left:8%;}
+.section_one .sec_title_box dt{text-align: right;}
+.section_one .feature{overflow: hidden;padding:11em 0 6em;}
+.section_one .feature li{box-sizing:border-box;float:left;width:33.3333%;padding:0 2%;text-align: center;}
+.section_one .feature .fea_icon{display: inline-block;height:190px;padding-bottom:100px;background: url("../images/dashed.png") no-repeat center bottom;}
+.section_one .feature .fea_content h3{margin:3em 0 2em;font-size:1.8em;font-weight: normal;}
+.section_one .feature .fea_content p{font-size:1.6em;line-height: 1.5;}
+/*section two*/
+.section_two .sec_title_box dt{padding-left:8%;padding-top:80px;float:right;background: url("../images/line.png") no-repeat left bottom;}
+.section_two .sec_title_box dd{width:100%;margin-top:80px;}
+.section_two  ul li{float:left;width:25%;}
+.section_two  ul li img{max-width: 100%;}
+.section_two .view_more{margin:5em 0;}
+.section_two .view_more .see_more{background: #fff;}
+/*section three*/
+.section_three .sec_title_box{padding-top:6.5em;background: url("../images/line.png") no-repeat center bottom;}
+.section_three .sec_title_box dt{padding-right:8%;text-align: right;}
+.section_three .sec_title_box dd{padding-left:8%;}
+.section_three .sec_title_box dd{overflow: hidden;}
+.section_three  .skills{overflow: hidden;}
+.section_three  .skills li{float:left;width:33.3333%;padding:6em 1.5%;text-align: center;box-sizing: border-box;}
+.section_three  .skills li .ski_tit{font-family: "big_john";}
+.section_three  .skills li .ski_tit p{padding:1em 0;font-size:1.8em;line-height: 1.2;}
+.section_three  .skills li .ski_tit strong{display: block;font-size:2.5em;font-weight: normal;}
+.section_three  .skills li p{font-size:1.6em;}
+/*footer*/
+footer{background-color:#D3EAE4;overflow:hidden;}
+footer .left,footer .right{width:50%;box-sizing: border-box;}
+footer .left{padding-right:6%;padding-top:15em;}
+footer .left form{visibility: hidden;}
+footer .left .label{margin-bottom:10px;font-family:"big_john";font-size:18px;}
+footer .left input,footer .left textarea{box-sizing:border-box;width:100%;margin-bottom:20px;padding:2%;background:#FAD763;border:4px solid #000;border-radius:15px;outline:none;font-size:1.6em;font-family: "opensans-light";}
+footer .left textarea{height:12em;}
+footer .left .submit_box{margin:30px 0 50px;}
+footer .left .see_more{padding:0;box-sizing:content-box;background-color:#FAD763;}
+footer .right {padding-left:5%;}
+footer .right dt,footer .right dd{float:none;width:auto;margin-top:5em;}
+footer .right .share_box{display:none;margin:4em 0 6em;overflow:hidden;}
+footer .right .share_box a{float:left;width:80px;height:80px;margin-right:12px;background: url("../images/contact.png") no-repeat;}
+footer .right .share_box a.facebook_icon{background-position: 0 0;}
+footer .right .share_box a.twitter_icon{background-position: -92px 0;}
+footer .right .share_box a.google_icon{background-position: -183px 0;}
+footer .right .share_box a.p_icon{background-position: -275px 0;}
+footer .right .share_box a.in_icon{background-position: -365px 0;}
+footer .right .msg li{display: inline-block;box-sizing:border-box;width:48%;padding-right:5%;margin-bottom: 30px;}
+footer .right .msg li.first_msg{display:block;}
+footer .right .msg li h5{font-size:18px;}
+footer .bottom{clear:both;padding:50px 0;overflow:hidden;}
+footer .bottom p{float:left;padding-top:11px;font-family: "big_john";font-size:1.8em;}
+footer .bottom nav{float:right;}
+footer .bottom nav ul li a:hover,footer .bottom nav ul li a:active{color:#D3EAE4;background-color:#000;border-radius:15px;}
+
+/***响应式处理***/
+@media screen and (max-width: 1400px){
+    body{font-size:50%;}
+    .w{width:88%;}
+    header .view_more{height:220px;}
+    header .view_more .line_icon{height: 70%;}
+}

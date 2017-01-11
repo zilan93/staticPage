@@ -1,0 +1,70 @@
+html {-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;box-sizing: border-box;font-family: HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;min-width: 320px;color: #272727;}
+body{margin:0;padding:0;background: #ececec;-webkit-display:flex;-moz-display:flex;-ms-display:flex;display:flex;flex-direction: column;}
+a{text-decoration:none;}
+h1,h2,h3,h4,h5{margin:0;padding:0;}
+
+/*header*/
+header{flex:0 1 100%;background-color:#fff;position:relative;}
+header .logo i{display:block;height:18px;padding:1.5em 0;background:url("../images/mobile_logo.png") no-repeat 2em center;}
+.menu_box .menu_btn{position:absolute;right:0;top:0;width:5em;height:100%;border-left:1px solid #ECECEC;background: url("../images/main_menu_icon.png") no-repeat center;}
+.menu_box nav{display:none;position:absolute;left:0;right:0;background-color:#fff;}
+.menu_box nav a{display:block;width:100%;color:#444444;font-size:1em;line-height:3.2;font-weight:bold;border-bottom:1px solid #ECECEC;text-align: center;}
+.menu_box nav a:hover{background-color:#F7F7F7;}
+/*section*/
+.content{flex:0 1 100%;padding:0 2em 3em;}
+.detects{padding:2.5em 0;}
+.detects h2{font-size:2.5em;line-height:1;color:#444444;}
+.detects .add{font-size:1.5em;line-height: 1.2;color:#666666;}
+.detects_links a{box-sizing:border-box;display:block;width:100%;margin:1em auto;font-size:1.5em;line-height:3;text-align: center;}
+.detects_link{background-color:#DB4886;color:#fff;}
+.build_link{border:1px solid #AAA8A9;color:#444444;}
+.intro h3,.reason h3{font-size:2em;color:#444444;font-weight: normal;}
+.intro p,.reason p{margin-bottom:1.5em;font-size:1.2em;color:#666666;line-height:1.8;}
+.others{-webkit-display:flex;-moz-display:flex;-ms-display:flex;display:flex;flex-wrap: wrap;}
+.others>div{width:100%;background-color:#fff;margin-bottom:1.5em;}
+.others h5{padding:0 0.5em;font-size:1em;line-height:2;font-weight:normal;color:#444444;border-bottom:1px solid #ECECEC;}
+.others .links{padding:1em;}
+.others a{display:block;color:#666;font-size:1em;line-height:2;}
+.others a:hover{color:#DB4886;}
+/*footer*/
+footer{background-color:#DB4886;padding:1.2em 2em;}
+footer p{font-size:0.6em;color:#fff;text-align: center;}
+footer p a{color:#fff;text-decoration: underline;}
+footer p a:hover{text-decoration: none;}
+footer .github_logo{display:block;width:100%;height:42px;margin-top:2em;background:url("../images/github_logo.png") no-repeat center;}
+
+/*media*/
+@media screen and (min-width: 450px){
+    header{-webkit-display:flex;-moz-display:flex;-ms-display:flex;display:flex;}
+    header .logo{-webkit-display:flex;-moz-display:flex;-ms-display:flex;display:flex;flex-direction:column;text-align: center;}
+    header .logo i{display:inline-block;min-width:150px;height:100%;-webkit-flex:1 1 auto;flex:1 1 auto;background: url("../images/ipad.png") no-repeat 2em center;}
+    .menu_box{flex:1 1 auto;-webkit-display:flex;-moz-display:flex;-ms-display:flex;display:flex;}
+    .menu_box .menu_btn{display:none;}
+    .menu_box nav{flex:1 1 auto;display:block;position:static;background-color:#fff;}
+    .menu_box nav a{float:left;box-sizing:border-box;width:50%;color:#444444;font-size:1em;line-height:3.2;font-weight:bold;border:1px solid #ECECEC;border-top:none;border-right:none;text-align: center;}
+    .menu_box nav a:hover{background-color:#F7F7F7;}
+    .menu_box nav a:nth-child(3){border-bottom:none;}
+    .menu_box nav a:last-child{border-bottom:none;}
+    .others>div{width:46%;margin-left:4%;}
+}
+@media screen and (min-width: 751px){
+    .menu_box nav a{float:left;box-sizing:border-box;width:25%;padding:1.5em 0;border-top:none;border-bottom:none;}
+    .menu_box nav a:last-child{border-right:none;}
+    .detects h2{font-size:4em;}
+    .detects .add{font-size:2em;}
+    .intro h3, .reason h3{font-size:2.5em;}
+    .detects_links a{display:inline-block;width:300px;}
+    .detects_links .detects_link{margin-right:30px;}
+    .others>div{width:70%;margin:0 auto 1.5em;margin-left:auto;}
+}
+@media screen and (min-width: 960px){
+.content_box{-webkit-display:flex;-moz-display:flex;-ms-display:flex;display:flex;}
+    .content_box .arti{flex:1 1 40%;}
+    .content_box .others{flex:1 1 60%;}
+}
+@media screen and (min-width: 1251px){
+    .others>div {
+        width: 46%;
+        margin:0 0 1.5em 4%;
+    }
+}

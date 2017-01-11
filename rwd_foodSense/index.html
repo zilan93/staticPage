@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <link href="css/main.css" rel="stylesheet" />
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+    <script src="js/cycle.js"></script>
+    <script>
+        $('.slides ul').cycle({
+            fx:     'fade',
+            speed:  500,
+            timeout: 4000,
+            pause: true,
+            pager:  '.slides .h-nav',
+            pagerAnchorBuilder: function(idx,slide) {
+                // return selector string for existing anchor
+                return '.slides .h-nav a:eq(' + idx + ') a';
+            }
+        });
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <header class="header" role="masthead">
+        <div class="header-logo"><a href="#"></a></div>
+        <nav>
+            <div>
+                <a href="#" class="nav-item maker-icon">Tastemakers</a>
+                <a href="#" class="nav-item blog-icon">Blog</a>
+                <a href="#" class="nav-item list-icon">The A-List</a>
+                <a href="#" class="nav-item contri-icon">Contribute</a>
+                <a href="#" class="nav-item about-icon">About</a>
+            </div>
+        </nav>
+    </header>
+    <aside>
+        <section>
+            <h5>LATEST TWEET</h5>
+            <div class="join"><a href="#">Join the Conversation</a></div>
+        </section>
+        <section>
+            <h5>LET'S BE FRIENDS!</h5>
+            <P> For weekly finds, community recommendations, and more, like us on Facebook.</P>
+            <div class="join"><a href="#">Join the Conversation</a></div>
+        </section>
+    </aside>
+    <div class="container">
+        <section class="slides">
+            <ul>
+                <li class="slide">
+                    <img src="images/0140_foodsense.jpg">
+                    <a href="#">
+                        <h1>What's Cooking?</h1>
+                        <h2>Browse our gallery for dependably delicious recipes. </h2>
+                    </a>
+                </li>
+                <li class="slide">
+                    <img src="images/0219_foodsense.jpg">
+                    <a href="#">
+                        <h1>Read, Learn, Share</h1>
+                        <h2>Get daily how-tos, stories & updates with the latest news. </h2>
+                    </a>
+                </li>
+                <li class="slide">
+                    <img src="images/0052_foodsense.jpg">
+                    <a href="#">
+                        <h1>Shop for the Best</h1>
+                        <h2>With our carefully curated vendor list, you'll know what to buy. </h2>
+                    </a>
+                </li>
+                <li class="slide">
+                    <img src="images/0232_foodsense.jpg">
+                    <a href="#">
+                        <h1>Share your Food Sense</h1>
+                        <h2>Submit your favorite recipes, become a contributor, or get interviewed.</h2>
+                    </a>
+                </li>
+            </ul>
+            <div class="h-nav">
+                <a href="#" class="feature-1">
+                    <h3>Tastemakers</h3>
+                    <p>Feast your eyes & get recipes!</p>
+                </a>
+                <a href="#" class="feature-2">
+                    <h3>Blog</h3>
+                    <p>Handpicked, absolute favorites</p>
+                </a>
+                <a href="#" class="feature-3">
+                    <h3>The A-List</h3>
+                    <p>Feast your eyes & get recipes!</p>
+                </a>
+                <a href="#" class="feature-4">
+                    <h3>Contribute</h3>
+                    <p>We want to hear from you!</p>
+                </a>
+            </div>
+        </section>
+        <section class="newsletter">
+            <p>Sign up for our newsletter to receive a handpicked selection of the best stories, recipes, and news, delivered weekly to your inbox.</p>
+            <form>
+                <input type="text" placeholder="Email" />
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        <section class="blog">
+            <article>
+                <a href="#" class="blog-title">
+                    <div><img src="images/cookbooks_blog.jpg"></div>
+                    <h5>2012’s Best Summer Cookbooks</h5>
+                </a>
+                <p>
+                    With the best of the season coming from “orchards,
+                    farms and gardens,” NPR has put together an impressive collection of 10 summer cookbooks.
+                </p>
+                <p class="meta">May 23, 2012 / <a href="#"> Read »</a></p>
+            </article>
+            <article>
+                <a href="#"  class="blog-title">
+                    <div><img src="images/SweetPotatoChips.jpg"></div>
+                    <h5>How to Make Vegetable Chips</h5>
+                </a>
+                <p>
+                    About a month ago, I ate almost an entire box of kale chips.
+                    My brother and I were visiting our cousin in Brooklyn, and before a very thoughtfully prepared vegan…
+                </p>
+                <p class="meta">May 23, 2012 / <a href="#"> Read »</a></p>
+            </article>
+            <article>
+                <a href="#"  class="blog-title">
+                    <div><img src="images/Pinterest_Page_featured.png"></div>
+                    <h5>Join us on Pinterest!</h5>
+                </a>
+                <p>
+                    If I could curate a cookbook for you, this would be it.
+                </p>
+                <p class="meta">May 23, 2012 / <a href="#"> Read »</a></p>
+            </article>
+            <article>
+                <a href="#"  class="blog-title">
+                    <div><img src="images/Adithi_Dinner_blog.jpg"></div>
+                    <h5>Recipes from a Sunday Supper</h5>
+                </a>
+                <p>
+                    I could not figure out what to do with the delectable slices of Pear Cake that I brought home from this wonderful
+                    Sunday supper - eat them slowly, a little bit at…
+                </p>
+                <p class="meta">May 23, 2012 / <a href="#"> Read »</a></p>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <p>
+            <a href="#">Privacy Policy</a>|
+            <a href="#">Terms of Use</a>|
+            <a href="#">Contact</a>
+            <span>© 2016 Food Sense, all rights reserved.</span>
+        </p>
+        <div class="social">
+            <a href="#" class="twitter">Twitter</a>
+            <a href="#" class="facebook">Facebook</a>
+            <a href="#" class="rss">Subscribe via RSS</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

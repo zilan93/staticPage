@@ -1,0 +1,6 @@
+section ul li>div{display:inline-block;}
+section ul li{padding:15px 0;border-top:1px solid #CCCCCC;}
+section ul li:last-child{border-bottom:1px solid #CCCCCC;}
+section ul li .date{width:30%;}
+section .day_temp{width:30%;text-align: center;}
+section .day_temp span{display:block;width:100%;}

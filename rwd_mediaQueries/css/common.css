@@ -1,0 +1,69 @@
+body,ol,ul,p,div,header,h1,h2,h3,h4,h5{margin:0;padding:0;}
+body{font:100%/1.5 Georgia,serif;color:#333;}
+ul,ol{list-style:none;}
+a{text-decoration:none;}
+.container{width:100%;box-sizing:border-box;max-width:64em;margin:0 auto;padding:0 1.5em;}
+/*header*/
+.container_box{position:relative;}
+.ad{position:absolute;right:0;top:1em;}
+.logo .logo_link{display:block;width:140px;height:100px;padding-top:60px;padding-left:20px;font-size:2.2em;color:#fff;line-height:1;background-color:#CC0000;}
+.logo .logo_link:hover{background-color:#000;}
+.logo .logo_link span{display:block;}
+.ad a{display:block;}
+.ad a .ad_text{display:inline-block;width:11em;padding-right:0.5em;text-align:right;font-size:0.8em;color:#333;vertical-align: top;}
+.ad a .ad_name{width:100%;padding:0.5em 0;font-size:0.8em;color:#222;text-align: center;}
+
+/*content*/
+.content{padding-top:3em;}
+.content_tit{font-size:1.8em;font-weight: normal;overflow:hidden;}
+.content_tit .like{float:right;position:relative;font-size:0.5em;color:#999;cursor:pointer;}
+.content_tit .like:before,.content_tit .like:after{content:"";position:absolute;top:0;width:15px;height:25px;background-color:#DDDDDD;border-radius:2em 2em 0 0;}
+.content_tit .like:before{left:-38px;-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);}
+.content_tit .like:after{left:-30px;-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-o-transform: rotate(45deg);transform: rotate(45deg);}
+.article_lists{width:100%;}
+.article_lists a img{float:left;margin-bottom:1em;margin-right:3.125%;box-sizing:border-box;-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.6);}
+.article_lists a .smartphone{width:7.8125%;max-width:5em;}
+.article_lists a .tablet{width:18.75%;max-width: 12em;}
+.article_lists a .netbook{width:25%;max-width:16em;}
+.article_lists a .desktop{width:39.0625%;max-width:25em;margin-right:0;}
+.back_btn{padding:1em 0;}
+.back_btn a:link,.back_btn a:visited{color:#CC0000}
+.back_btn a:hover{color:#333;}
+
+/*footer*/
+footer{background-color:#111111;border-top:1px solid #fff;box-shadow:0 -8px 10px rgba(0,0,0,0.3)}
+footer .footer_content{box-sizing:border-box;max-width:64em;width:100%;margin:0 auto;padding:3em 1.5em ;overflow:hidden;}
+.footer_links{float:left;width:32%;box-sizing: border-box;padding-right:3%;}
+.footer_others{float:right;width:66%;box-sizing:border-box;padding-left:22%;}
+.footer_links ul li{margin-bottom:0.8em;}
+.footer_links ul li a{display:block;padding:0.5em;background-color:#1C1C1C;color:#fff;font-size:1.3em;}
+.footer_links ul li a:hover{background-color:#CC0000;}
+.footer_others p{color:#ccc;padding:0.8em 0;}
+.share_twitter{display:block;width:150px;height:24px;background: url("../images/sign-in-with-twitter-sprite.png") no-repeat 0 0;}
+.share_twitter:hover{background-position:0 -24px;}
+.subscribe{position:relative;height:49px;padding-top:0.5em;border-top:1px dashed #333333;overflow:hidden;}
+.subscribe a{position:relative;display:block;height:100%;padding-left:3em;color:#ccc;}
+.subscribe a:before,.subscribe a:after,.subscribe:after{content:"";position:absolute;width:15px;height:15px;border-radius:50%;}
+.subscribe:after{left:-32px;bottom:-32px;width:60px;height:60px;border:6px solid #CC0000;}
+.subscribe a:before{left:0;bottom:0;width:14px;height:14px;background-color:#CC0000;}
+.subscribe a:after{left:-25px;bottom:-25px;width:40px;height:40px;border:6px solid #CC0000;}
+
+/*¶Ïµã*/
+@media screen and (max-width: 895px){
+    .footer_others {padding-left: 0;}
+    .footer_others p:first-child{border-bottom:1px dashed #333333;}
+}
+@media screen and (max-width: 640px){
+    header{padding-top:3em;}
+    .logo .logo_link{width:110px;height:80px;padding-top:50px;margin:0 auto;font-size:1.6em;}
+    .ad {position:static;padding-bottom:1.5em;overflow:hidden;}
+    .ad img{float:left;}
+    .ad a .ad_text {width:auto;padding-left:0.5em;}
+    .ad a .ad_name {clear:both;}
+    .footer_links {float: none;width: 100%;padding-right:0;}
+    .footer_links ul li {margin-bottom: 0.3em;}
+    .footer_links ul li:last-child{margin-top:2em;}
+    .footer_links ul li a{padding:0.2em;font-size:1.2em;background-color: #cc0000;text-align: center;}
+    .footer_links ul li a:hover{background-color:#333;}
+    .footer_others {float: none;width: 100%;}
+}

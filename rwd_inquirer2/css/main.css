@@ -1,0 +1,62 @@
+body{padding:0;margin:0;background:#e4e4e4 url("../images/bg.png");color: rgba(0, 0, 0, 0.82);font: normal 100% Cambria, Georgia, serif;}
+a{text-decoration: none;color:#890101;}
+ul,p,section,article,figure{margin:0;padding:0;list-style:none;}
+h1,h2,h3,h4,h5{margin:0;padding:0;font-weight:normal;}
+
+.wrap{margin:0 auto;padding:2em 3%;background:url("../images/rag.png") repeat-x left top;overflow:hidden;}
+header{float:left;width:32%;position:relative;}
+main{float:right;width:66%;}
+footer{float:right;width:66%;}
+
+header .logo-box a{display:block;height:279px;margin:0 auto;box-sizing:border-box;padding-top:105px;background: url("../images/logo-bg.png") no-repeat center;}
+header .logo-box a span{display:inline-block;width:100%;height:90px;margin:0 auto;background:url("../images/logo.png") no-repeat center;}
+header nav{width:60%;margin:1.5em auto;padding-top:1.5em;background:url("../images/ornament.png") no-repeat left top;}
+header nav a{display:block;margin-bottom: -1em;padding:1em 0 3em;text-align: center;background:url("../images/ornament.png") no-repeat left bottom;text-transform: uppercase;letter-spacing: 0.05em;}
+header nav a i{display:block;font-style: normal;font-size:0.8em;}
+
+.intro-content{margin-top:6em;}
+.intro-content h3{margin:15px 0;text-align: center;font: normal 2em "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;letter-spacing: 0.04em;}
+.intro-content p{font-size:1em;line-height:1.5em;}
+
+.pics{margin:10px 0;}
+.pics .head-tit{background:url("../images/ornament.png") no-repeat left center;text-align: center;}
+.pics .head-tit b{display:inline-block;padding:0 20px;background:url("../images/bg.png") no-repeat center;font-size:1.3em;line-height:1.5;font-weight: normal;}
+abbr{font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;font-style: italic;}
+.pics ul{overflow:hidden;}
+.pics ul li{float:left;width:32%;margin-right:2%;margin-top:1em;}
+.pics ul li:nth-child(3n){margin-right:0;}
+.pics ul li div{border-radius:5px;overflow:hidden;}
+.pics ul li img{width:100%;max-width: 100%;}
+.pics ul li a figcaption{text-align: center;font-size:0.7em;text-transform: uppercase;}
+.pics ul li a figcaption b{display:block;font-size:1.2em;font-weight: normal;font-family: "Book Antiqua", "Palatino Linotype", Georgia, serif;color:#8E0404;}
+
+footer{padding:2.3em 0 0;background: url("../images/ornament.png") no-repeat center 0;}
+footer p{font-size:0.6em;text-align: center;line-height:1.6;}
+
+.analysis{background:#fff;width:96%;margin:2em auto;}
+.analysis .ana-result img{text-align: center;}
+
+@media screen and (max-width: 600px){
+    .wrap{padding:1.1em 3%;}
+    header{float:none;width:auto;}
+    header nav{position:absolute;top:0;left:0;width:100%;margin:0 auto;overflow:hidden;}
+    header nav a{float:left;width:32%;margin-right:2%;padding:0.8em 0 2.3em;font-size:0.8em;}
+    header nav a:last-child{margin-right:0;}
+    .intro-content h3{font-size:1.5em;}
+    main,footer{float:none;width:100%;}
+    header .logo-box a{height:170px;padding-top:80px;background-image:none;}
+    .intro-content{margin-top:0;}
+}
+@media screen and (min-width: 1300px){
+    header{float:none;width:100%;}
+    header .logo-box{float:left;width:32%;}
+    header .logo-box a{margin:0;}
+    header nav{float:right;width:66%;background-image:none;}
+    header nav a{float:left;width:32%;margin-right:2%;}
+    header nav a:last-child{margin-right:0;}
+    .pics ul li:nth-child(3n){margin-right:2%;}
+    .pics ul li:last-child{margin-right:0;}
+    .intro-content { margin-top:1em;}
+    .pics ul li{width:15%;}
+    footer{clear:both;width:20%;margin-right:23%;}
+}
