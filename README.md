@@ -1,5 +1,2 @@
 # staticPage
-ver1.0----第一版，百分比+固定布局
-ver2.0----第二版，在不同分辨率范围里给html设置不同字体大小；
-ver3.0----第三版，通过js来动态改变html字体大小；
-ver4.0----第四版，通过js来改变meta属性里的缩放大小；
+bootstrap_demo----应用bootstrap制作的一个静态页面；
