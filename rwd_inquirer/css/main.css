@@ -1,12 +1,11 @@
 body{padding:0;margin:0;background:#e4e4e4 url("../images/bg.png");color: rgba(0, 0, 0, 0.82);font: normal 100% Cambria, Georgia, serif;}
 a{text-decoration: none;color:#890101;}
-ul,ol,p,section,article,figure{margin:0;padding:0;list-style:none;}
+ul,p,section,article,figure{margin:0;padding:0;list-style:none;}
 h1,h2,h3,h4,h5{margin:0;padding:0;font-weight:normal;}
 
 .wrap{margin:0 auto;padding:2em 3%;background:url("../images/rag.png") repeat-x left top;overflow:hidden;}
 header{float:left;width:32%;position:relative;}
-main{float:right;width:66%;}
-footer{float:right;width:66%;}
+main,footer{float:right;width:66%;}
 
 header .logo-box a{display:block;height:279px;margin:0 auto;box-sizing:border-box;padding-top:105px;background: url("../images/logo-bg.png") no-repeat center;}
 header .logo-box a span{display:inline-block;width:100%;height:90px;margin:0 auto;background:url("../images/logo.png") no-repeat center;}
@@ -32,6 +31,8 @@ abbr{font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler
 
 footer{padding:2.3em 0 0;background: url("../images/ornament.png") no-repeat center 0;}
 footer p{font-size:0.6em;text-align: center;line-height:1.6;}
+
+
 @media screen and (max-width: 600px){
     .wrap{padding:1.1em 3%;}
     header{float:none;width:auto;}
@@ -45,7 +46,7 @@ footer p{font-size:0.6em;text-align: center;line-height:1.6;}
 }
 @media screen and (min-width: 1300px){
     header{float:none;width:100%;}
-    header .logo-box{float:left;}
+    header .logo-box{float:left;width:32%;}
     header .logo-box a{margin:0;}
     header nav{float:right;width:66%;background-image:none;}
     header nav a{float:left;width:32%;margin-right:2%;}

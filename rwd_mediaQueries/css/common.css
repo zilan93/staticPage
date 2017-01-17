@@ -1,25 +1,29 @@
-body,ol,ul,p,div,header,h1,h2,h3,h4,h5{margin:0;padding:0;}
+body,ol,ul,p,div,header,h1,h2,h3,h4,h5{margin:0;padding:0;font-weight: normal;}
 body{font:100%/1.5 Georgia,serif;color:#333;}
 ul,ol{list-style:none;}
 a{text-decoration:none;}
 .container{width:100%;box-sizing:border-box;max-width:64em;margin:0 auto;padding:0 1.5em;}
 /*header*/
 .container_box{position:relative;}
-.ad{position:absolute;right:0;top:1em;}
-.logo .logo_link{display:block;width:140px;height:100px;padding-top:60px;padding-left:20px;font-size:2.2em;color:#fff;line-height:1;background-color:#CC0000;}
+.ad {position:static;padding-bottom:1.5em;overflow:hidden;}
+.ad img{float:left;padding-right:0.5em;}
+.ad a .ad_text {font-size:0.8em;color:#333;vertical-align: top;}
+.ad a .ad_name{width:100%;padding:0.5em 0;clear:both;font-size:0.8em;color:#222;text-align: center;}
+header{margin:1em auto;overflow:hidden;}/*overflow:hidden;用来解决父元素外边距和子元素外边距重叠的问题。*/
+header hgroup{margin:1em 0 2em 0;}
+header hgroup h1{width:8em;margin:0 auto;background-color:#CC0000;font-size:inherit;}
+.logo .logo_link{display:block;height:5em;padding:3em 0 0 1em;color:#fff;line-height:0.9;}
 .logo .logo_link:hover{background-color:#000;}
-.logo .logo_link span{display:block;}
-.ad a{display:block;}
-.ad a .ad_text{display:inline-block;width:11em;padding-right:0.5em;text-align:right;font-size:0.8em;color:#333;vertical-align: top;}
-.ad a .ad_name{width:100%;padding:0.5em 0;font-size:0.8em;color:#222;text-align: center;}
+.logo .logo_link span{display:block;font-size:1.75em;}
 
 /*content*/
-.content{padding-top:3em;}
-.content_tit{font-size:1.8em;font-weight: normal;overflow:hidden;}
-.content_tit .like{float:right;position:relative;font-size:0.5em;color:#999;cursor:pointer;}
-.content_tit .like:before,.content_tit .like:after{content:"";position:absolute;top:0;width:15px;height:25px;background-color:#DDDDDD;border-radius:2em 2em 0 0;}
-.content_tit .like:before{left:-38px;-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);}
-.content_tit .like:after{left:-30px;-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-o-transform: rotate(45deg);transform: rotate(45deg);}
+.content{position:relative;}
+.content_tit{margin-bottom:0.25em;padding-right:2.5em;font-size:1.5em;font-weight: normal;overflow:hidden;}
+.content .like{position:absolute;right:0;top:0.5em;}
+.content .like a{padding-left:3em;font-size:0.5em;color:#999;}
+.content .like a:before,.content .like a:after{content:"";position:absolute;left:0;top:0;width:14px;height:22px;background-color:#DDDDDD;border-radius:2em 2em 0 0;}
+.content .like a:before{left:0;-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);}
+.content .like a:after{left:8px;-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-o-transform: rotate(45deg);transform: rotate(45deg);}
 .article_lists{width:100%;}
 .article_lists a img{float:left;margin-bottom:1em;margin-right:3.125%;box-sizing:border-box;-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.6);}
 .article_lists a .smartphone{width:7.8125%;max-width:5em;}
@@ -31,13 +35,14 @@ a{text-decoration:none;}
 .back_btn a:hover{color:#333;}
 
 /*footer*/
-footer{background-color:#111111;border-top:1px solid #fff;box-shadow:0 -8px 10px rgba(0,0,0,0.3)}
-footer .footer_content{box-sizing:border-box;max-width:64em;width:100%;margin:0 auto;padding:3em 1.5em ;overflow:hidden;}
-.footer_links{float:left;width:32%;box-sizing: border-box;padding-right:3%;}
-.footer_others{float:right;width:66%;box-sizing:border-box;padding-left:22%;}
-.footer_links ul li{margin-bottom:0.8em;}
-.footer_links ul li a{display:block;padding:0.5em;background-color:#1C1C1C;color:#fff;font-size:1.3em;}
-.footer_links ul li a:hover{background-color:#CC0000;}
+footer{padding:3em 1.5em;background-color:#111111;border-top:1px solid #fff;box-shadow:0 -8px 10px rgba(0,0,0,0.3)}
+footer .footer_content{box-sizing:border-box;max-width:64em;width:100%;margin:0 auto;overflow:hidden;}
+.footer_links {float: none;width: 100%;padding-right:0;}
+.footer_links ul li {margin-bottom: 0.3em;}
+.footer_links ul li:last-child{margin-top:2em;}
+.footer_links ul li a{display:block;padding:0.2em;font-size:1.2em;background-color: #cc0000;color:#fff;text-align: center;}
+.footer_links ul li a:hover{background-color:#333;}
+.footer_others {float: none;width: 100%;}
 .footer_others p{color:#ccc;padding:0.8em 0;}
 .share_twitter{display:block;width:150px;height:24px;background: url("../images/sign-in-with-twitter-sprite.png") no-repeat 0 0;}
 .share_twitter:hover{background-position:0 -24px;}
@@ -53,17 +58,17 @@ footer .footer_content{box-sizing:border-box;max-width:64em;width:100%;margin:0 
     .footer_others {padding-left: 0;}
     .footer_others p:first-child{border-bottom:1px dashed #333333;}
 }
-@media screen and (max-width: 640px){
-    header{padding-top:3em;}
-    .logo .logo_link{width:110px;height:80px;padding-top:50px;margin:0 auto;font-size:1.6em;}
-    .ad {position:static;padding-bottom:1.5em;overflow:hidden;}
-    .ad img{float:left;}
-    .ad a .ad_text {width:auto;padding-left:0.5em;}
-    .ad a .ad_name {clear:both;}
-    .footer_links {float: none;width: 100%;padding-right:0;}
-    .footer_links ul li {margin-bottom: 0.3em;}
-    .footer_links ul li:last-child{margin-top:2em;}
-    .footer_links ul li a{padding:0.2em;font-size:1.2em;background-color: #cc0000;text-align: center;}
-    .footer_links ul li a:hover{background-color:#333;}
-    .footer_others {float: none;width: 100%;}
+@media screen and (min-width: 40em){
+    header{margin-top:0;}
+    header hgroup{margin-top:0;font-size:1.25em;}
+    header hgroup h1{margin:0;}
+    .ad{position:absolute;right:0;top:1em;}
+    .ad a{display:block;}
+    .ad img{float:right;padding-right:0;}
+    .ad a .ad_text{float:left;display:inline-block;width:10em;}
+    .footer_links{float:left;width:29.6875%;box-sizing: border-box;padding-right:3.125%;}
+    .footer_others{float:left;width:67.1875%;box-sizing:border-box;}
+    .footer_links ul li{margin-bottom:0.8em;}
+    .footer_links ul li a{padding:0.3em 0.5em;background-color:#1C1C1C;color:#ccc;font-size:1.3em;}
+    .footer_links ul li a:hover{background-color:#CC0000;}
 }
