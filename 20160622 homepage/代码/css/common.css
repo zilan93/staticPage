@@ -1,0 +1,30 @@
+/*public styles*/
+html,body,ul,li,dl,dt,dd,p,h1,h2,h3,h4,h5{margin:0;padding:0;}
+body{min-width:1200px;margin:0 auto;font-size:62.5%;color:#000;background-color:#FEF9FD;font-family: "opensans-light";}
+h1,h2,h3,h4,h5{font-family: "big_john";font-weight: normal;}
+a{text-decoration: none;}
+ul{list-style: none;}
+.w{width:85%;max-width: 1500px;margin:0 auto;}
+.left{float:left;}
+.right{float:right;}
+/*font-face*/
+@font-face {
+    font-family: "big_john";
+    src: url("../Fonts/big_john.eot");
+    src: url("../Fonts/big_john.woff") format("woff"),
+         url("../Fonts/big_john.svg#big_john") format("svg");
+}
+@font-face {
+    font-family: "opensans-light";
+    src: url("../Fonts/opensans-light.eot");
+    src: url("../Fonts/opensans-light.woff") format("woff"),
+         url("../Fonts/opensans-light.ttf") format("truetype");
+         url("../Fonts/opensans-light.svg#opensans-light") format("svg");
+}
+@font-face {
+    font-family: "opensans-regular";
+    src: url("../Fonts/opensans-regular.eot");
+    src: url("../Fonts/opensans-regular.woff") format("woff"),
+         url("../Fonts/opensans-regular.ttf") format("truetype");
+         url("../Fonts/opensans-regular.svg#opensans-regular") format("svg");
+}
