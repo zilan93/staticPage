@@ -29,6 +29,7 @@ header .view_more{position:absolute;width:326px;height:260px;left:50%;bottom:10p
 header .view_more .see_more{background-color:#FAD763;}
 header .view_more .line_icon{position:absolute;bottom:0;left:50%;width:32px;height:70%;margin-left:-16px;background: url("../images/line.png") no-repeat center bottom;background-size:contain;}
 /*section one*/
+.section_one{background: #FFFFFF;}
 .section_one .sec_title_box{background: url("../images/dashed.png") repeat-y center top;}
 .section_one .sec_title_box dt{padding-right:8%;}
 .section_one .sec_title_box dd{padding-left:8%;}
@@ -83,7 +84,7 @@ footer .bottom nav{float:right;}
 footer .bottom nav ul li a:hover,footer .bottom nav ul li a:active{color:#D3EAE4;background-color:#000;border-radius:15px;}
 
 /***响应式处理***/
-@media screen and (min-width: 1200px) and (max-width: 1400px){
+@media screen and (max-width: 1400px){
     body{font-size:50%;}
     .w{width:88%;}
     header .view_more{height:220px;}

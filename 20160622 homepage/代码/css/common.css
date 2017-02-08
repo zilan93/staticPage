@@ -4,6 +4,7 @@ body{min-width:1200px;margin:0 auto;font-size:62.5%;color:#000;background-color:
 h1,h2,h3,h4,h5{font-family: "big_john";font-weight: normal;}
 a{text-decoration: none;}
 ul{list-style: none;}
+input,button{outline:none;}
 .w{width:85%;max-width: 1500px;margin:0 auto;}
 .left{float:left;}
 .right{float:right;}
