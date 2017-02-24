@@ -1,0 +1,34 @@
+*{box-sizing: border-box;}
+body{line-height:1.5;  color:#333;  font-family:"Microsoft Yahei";  font-size: 12px;}
+input,textarea,select{font-size:100%;font-family:inherit;}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form{margin:0;padding:0;}
+h4,h5,h6{font-size:1em;}
+ul,ol{padding-left:0;list-style-type:none;}
+/*image with no-border*/
+img{border:0;}
+figure{margin:0;padding:0;}
+a{text-decoration:none;}
+button,input{outline: none;}
+.fl{float:left;}
+.fr{float:right;}
+/***图标***/
+.common_icon{position:relative;display:inline-block;width:25px;height:25px;background:url("../images/common_icons.png") no-repeat;}
+.man_icon{background-position: 4px 4px;}
+.search_icon{background-position: 3px -24px;}
+.box_icon{background-position: 1px -49px;}
+.down_arrow_icon{background-position: 0 -75px;}
+.home_icon{background-position: 0 -95px;}
+/*国家图标*/
+.country_icon{position:relative;display:inline-block;width:35px;height:25px;vertical-align:middle;background:url("../images/country_icons.png") no-repeat;}
+.eng_icon{background-position: 0 0;}
+/*线条图标*/
+.line_icon{display:block;width:114px;height:22px;margin:0 auto;background: url("../images/wave_line.png") no-repeat;}
+.blue_line{background-position: 0 0;}
+/***搜索条***/
+.input_group{position:relative;display: table;border-collapse: separate;border: 1px solid #363947;}
+.input_group .form_control,.input_group .input_group_btn{display: table-cell;}
+.input_group_btn{width: 1%;white-space: nowrap;vertical-align: middle;}
+.form_control{display: block;width: 100%;height:34px;padding:6px 12px;border: none;color:#fff;}
+/***按钮***/
+.btn{display: inline-block;height:34px;padding:6px 12px;font-size:14px;line-height:1.42857143;font-weight:400;white-space:nowrap;text-align: center;vertical-align: middle;cursor:pointer;border:1px solid transparent;}
+.none_btn{background:none;border:none;}
